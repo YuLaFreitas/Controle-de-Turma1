@@ -13,7 +13,9 @@ using namespace std;
 
 //------------ VARIÁVEIS
 bool sair;
-int escmenu, userQ1;
+int escmenu, userQ1, for1, for2;
+string alunos[100];
+double n1[100], n2[100], freq[100];
 //main
 
 int main (){
@@ -44,9 +46,23 @@ while(sair!=1){
 		
 		case 1: 
 			system("cls");
-				cout<<"CADASTRO DE NOVOS ALUNOS";
-				cout<<"Quantos alunos deseja cadastrar? "<<endl;
+				cout<<"CADASTRO DE NOVOS ALUNOS\n\n\n";
+				cout<<"Quantos alunos deseja cadastrar? ";
 				cin>>userQ1;
+				system("cls");
+				for(for1 = 1; for1 <= userQ1; for1++){
+					cout<<"Digite o nome do "<<for1<<"º aluno:";
+					cin>>alunos[for1];
+					cout<<"Digite a nota 1 do "<<for1<<"º aluno:";
+					cin>>n1[for1];
+					cout<<"Digite a nota 2 do "<<for1<<"º aluno:";
+					cin>>n2[for1];
+					system("cls");
+					
+					
+					
+				}
+				
 					system("pause");
 								system("cls");
 
@@ -54,7 +70,11 @@ while(sair!=1){
 						break;
 		case 2:
 			system("cls");
-				cout<<"VISÂO GERAL DA TURMA";
+				cout<<"VISÂO GERAL DA TURMA"<<endl<<endl;
+					for(for2 = 1; for2 <= userQ1; for2++){
+					cout<<alunos[for2]<<"      N1: "<<n1[for2]<<"      N2: "<<n2[for2]<<endl;
+					
+				}
 					system("pause");
 								system("cls");
 
