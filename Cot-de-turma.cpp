@@ -13,7 +13,7 @@ using namespace std;
 
 //------------ VARIÁVEIS
 bool sair;
-int escmenu;
+int escmenu, userQ1;
 //main
 
 int main (){
@@ -45,6 +45,8 @@ while(sair!=1){
 		case 1: 
 			system("cls");
 				cout<<"CADASTRO DE NOVOS ALUNOS";
+				cout<<"Quantos alunos deseja cadastrar? "<<endl;
+				cin>>userQ1;
 					system("pause");
 								system("cls");
 
@@ -70,7 +72,7 @@ while(sair!=1){
 		case 4:
 			system("cls");
 				cout<<"ENCERRANDO";
-				Sleep(3000);
+				Sleep(1000);
 				
 				sair = true;
 					system("pause");
